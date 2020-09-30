@@ -1,0 +1,52 @@
+
+<div class="container">
+  <div class="row p-1 justify-content-start">
+    <h1 class="title mat-display-3">
+      HOLA MUNDO! <small>Soy Gerardo Guzmán!</small>
+    </h1>
+    <hr>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="row mb-2">
+
+    <div class="col">
+      <h1 class="title mat-display-1">
+        ¿Qué tecnologías domino?
+      </h1>
+      <hr>
+      <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+        <mat-chip *ngFor="let chip of availableColors" selected [color]="chip.color">
+          {{chip.name}}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+    <div class="col">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Jerry</mat-card-title>
+          <mat-card-subtitle>Desarrollador fullstack JS jr.</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../../assets/img/foto2.jpg" alt="ese soy yo">
+        <mat-card-content>
+          <p>
+            Tengo más de un año desarrollando aplicaciones web con los frameworks más recientes y usados de JS.
+            Me declaro un amante del lenguaje JS, aun que también tengo pasión por el analisis de datos y el campo del
+            machine learning. Me encanta la representación gráfica de datos y estar aprendiendo constantemente tecnoloías nuevas.
+            Adoro los videojuegos y el mundo de la aviación
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+  </div>
+
+</div>
+<footer>
+  <mat-toolbar class="footer-app">
+    <p>Gerardo Guzmán - {{year}}</p>
+  </mat-toolbar>
+</footer>
+
